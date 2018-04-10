@@ -12,9 +12,11 @@
 		3C7B3A63206E27BE00E608AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B3A61206E27BE00E608AB /* Main.storyboard */; };
 		3C7B3A65206E27BE00E608AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B3A64206E27BE00E608AB /* Assets.xcassets */; };
 		3C7B3A68206E27BE00E608AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B3A66206E27BE00E608AB /* LaunchScreen.storyboard */; };
+		EB16C34F60619BB4F9DCEAC7 /* Pods_LZDBookWorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76798C40FF37F5D774A8C39B /* Pods_LZDBookWorm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044FD86BDDB5DE47545AD029 /* Pods-LZDBookWorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZDBookWorm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZDBookWorm/Pods-LZDBookWorm.debug.xcconfig"; sourceTree = "<group>"; };
 		3C7B3A5A206E27BE00E608AB /* LZDBookWorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZDBookWorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7B3A5D206E27BE00E608AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C7B3A5F206E27BE00E608AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		3C7B3A64206E27BE00E608AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C7B3A67206E27BE00E608AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C7B3A69206E27BE00E608AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76798C40FF37F5D774A8C39B /* Pods_LZDBookWorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZDBookWorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3ADD991330BC6E297B9A231 /* Pods-LZDBookWorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZDBookWorm.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZDBookWorm/Pods-LZDBookWorm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB16C34F60619BB4F9DCEAC7 /* Pods_LZDBookWorm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				3C7B3A5C206E27BE00E608AB /* LZDBookWorm */,
 				3C7B3A5B206E27BE00E608AB /* Products */,
+				43B5BA4FC98BF0DF4B247C01 /* Pods */,
+				D803AFD239D7CAD6D820D770 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = LZDBookWorm;
 			sourceTree = "<group>";
 		};
+		43B5BA4FC98BF0DF4B247C01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				044FD86BDDB5DE47545AD029 /* Pods-LZDBookWorm.debug.xcconfig */,
+				B3ADD991330BC6E297B9A231 /* Pods-LZDBookWorm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D803AFD239D7CAD6D820D770 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76798C40FF37F5D774A8C39B /* Pods_LZDBookWorm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C7B3A6C206E27BE00E608AB /* Build configuration list for PBXNativeTarget "LZDBookWorm" */;
 			buildPhases = (
+				4A7E00E72603CE9531E289DF /* [CP] Check Pods Manifest.lock */,
 				3C7B3A56206E27BE00E608AB /* Sources */,
 				3C7B3A57206E27BE00E608AB /* Frameworks */,
 				3C7B3A58206E27BE00E608AB /* Resources */,
+				6B410BEA83F118D50253AE0D /* [CP] Embed Pods Frameworks */,
+				2608458A28FAEE3BA6CA9D42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2608458A28FAEE3BA6CA9D42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZDBookWorm/Pods-LZDBookWorm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A7E00E72603CE9531E289DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B410BEA83F118D50253AE0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZDBookWorm/Pods-LZDBookWorm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C7B3A56206E27BE00E608AB /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		3C7B3A6D206E27BE00E608AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 044FD86BDDB5DE47545AD029 /* Pods-LZDBookWorm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -281,12 +357,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.xian.LZDBookWorm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3C7B3A6E206E27BE00E608AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3ADD991330BC6E297B9A231 /* Pods-LZDBookWorm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,7 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.xian.LZDBookWorm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
